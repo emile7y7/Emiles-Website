@@ -1,0 +1,332 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Default color for other sections */
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ADD8E6;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100rem;
+    margin: auto;
+    font-size: 1rem;
+}
+
+/* Button styling */
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(267deg, #000 1%, #8ed2f8 100%);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white; /* Button text color */
+}
+
+/* Animation styling */
+.animation {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Hover effect */
+.btn:hover {
+    background: linear-gradient(267deg, #8ed2f8 1%, #000 100%);
+    transform: scale(1.05);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.text-effect {
+    background: linear-gradient(267deg, #000080 1%, #8ed2f8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    margin: 4rem 8rem 20rem;
+}
+
+/* About Section */
+.about-sections {
+    display: flex;
+    gap: 4rem;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-left img {
+    width: 40%;
+    margin: auto;
+}
+
+/* Skills Section */
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 85%;
+}
+
+.about-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+/* Styling the lines (hr) under each skill */
+.about-skill hr {
+    width: 100%;
+    border: none;
+    height: 0.5rem;
+    border-radius: 4rem;
+    background: linear-gradient(267deg, #000080 1%, #8ed2f8 100%);
+    margin-top: 0.5rem;
+}
+
+/* Change the color for the About Me section to black */
+#about h2,
+#about p {
+    color: #000; /* Set the text color to black */
+}
+
+/* Achievements Section */
+.about-achievements {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.about-achievement {
+    text-align: center;
+    color: #000; /* Set achievement text color to black */
+}
+
+.about-achievement h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navbar styling */
+.navbar-placeholder {
+    height: 5rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    background: #1a1a1a;
+    color: white;
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Keep navbar fixed at the top */
+    z-index: 100;
+    top: 0;
+    justify-content: center; /* Center the items in the navbar */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar img {
+    width: 4rem;
+    cursor: pointer;
+}
+
+/* Adjust nav-menu to center and align */
+.navbar .nav-menu {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Center the nav items */
+    flex: 1; /* Allow it to take remaining space */
+}
+
+.navbar .nav-menu a {
+    text-decoration: none;
+    color: black; /* Set menu item text color to black */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .fa-bars {
+        display: block;
+    }
+
+    .navbar .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #1a1a1a;
+        transition: right 0.3s ease;
+        width: 100%;
+    }
+}
+
+.nav-opened {
+    right: 0;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/hero-background.jpg') center/cover;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-resume {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    background-color: #0d6efd;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+}
+
+.hero-resume:hover {
+    background-color: #0950d4;
+}
+
+/* Container and Section Styling */
+.container {
+    padding: 4rem 1.5rem;
+    background-color: #fff;
+    color: #333;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.container-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-sections,
+.contact-section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-skill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 2rem;
+    color: #000; /* Set contact text color to black */
+}
+
+.contact-left h2 {
+    font-size: 2rem;
+}
+
+.contact-details .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-right label {
+    font-weight: bold;
+    color: #000; /* Set label color to black */
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a1a;
+    padding: 2rem 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.footer-top-left img {
+    width: 3rem;
+}
+
+.footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/Screenshot-2024-09-18-001123.ico">
+    <script src="./scripts/scripts.js" defer></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <div>
+        <div class="navbar-placeholder"></div>
+        <nav class="navbar flex">
+            <a href="#home"><img src="./assets/logo.png" alt="logo" class="animation"></a>
+            <i class="fa-solid fa-bars animation"></i>
+            <div class="nav-menu flex">
+                <i class="fa-solid fa-x animation"></i>
+                <a href="#home" class="animation">Home</a>
+                <a href="#about" class="animation">About</a>
+                <a href="#achievements" class="animation">Achievements</a>
+                <a href="#work" class="animation">Work</a>
+                <a href="#contact" class="animation">Contact</a>
+            </div>
+            <a href="#contact" class="btn nav-btn animation">Contact</a>
+        </nav>
+    </div>
+
+    <!-- hero -->
+    <div class="hero flex" id="home">
+        <img src="./assets/IMG_3648.jpg" alt="web dev">
+        <h1><span class="text-effect">I'm Emile Edwards,</span> a sixth form student and a coder</h1>
+        <a href="./assets/EmileEdwardsResume.pdf" class="hero-resume animation" target="_blank" rel="noopener noreferrer">Resume</a>
+    </div>
+
+    <!-- about -->
+    <section class="container flex" id="about">
+        <div class="container-title">
+            <h2>About Me</h2>
+            <img src="./assets/Deco heading.png" alt="decoration heading">
+        </div>
+        <div class="about-sections flex">
+            <div class="about-left flex">
+                <img src="assets/IMG_3648.jpg" alt="web dev">
+            </div>
+            <div class="about-right flex">
+                <p>I am a coder that loves to solve complex challenges</p>
+            </div>
+        </div>
+
+        <div class="about-skills">
+            <h3>Web Development</h3>
+            <div class="about-skill flex animation">
+                <p>HTML and CSS</p>
+                <hr>
+            </div>
+            <div class="about-skill flex animation">
+                <p>JavaScript</p>
+                <hr>
+            </div>
+            <div class="about-skill flex animation">
+                <p>Python</p>
+                <hr>
+            </div>
+            <div class="about-skill flex animation">
+                <p>React JS</p>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <!-- achievements -->
+    <section class="container flex" id="achievements">
+        <div class="container-title">
+            <h2>Achievements</h2>
+            <img src="./assets/Deco heading.png" alt="decoration heading">
+        </div>
+        <div class="about-achievements flex">
+            <div class="about-achievement flex animation">
+                <h2 class="text-effect">1+</h2>
+                <p>Limited years of experience, but I remain enthusiastic</p>
+            </div>
+            <div class="about-achievement flex animation">
+                <h2 class="text-effect">9+</h2>
+                <p>Completed bootcamps</p>
+            </div>
+            <div class="about-achievement flex animation">
+                <h2 class="text-effect">5+</h2>
+                <p>Helped in IT department at school</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="container flex" id="services">
+        <div class="container-title">
+            <h2>Services</h2>
+            <img src="./assets/Deco heading.png" alt="decoration heading">
+        </div>
+        <div class="grid-container">
+            <div class="service-card animation">
+                <h3>01</h3>
+                <h2 class="text-effect">Student</h2>
+                <p>Completed bootcamps, helped in IT department at school, and self-sufficient learner.</p>
+            </div>
+            <div class="service-card animation">
+                <h3>02</h3>
+                <h2 class="text-effect">Aspiring Developer</h2>
+                <p>With hard work and determination, I hope to achieve my goals, so currently I have no services to offer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- work -->
+    <section class="container flex" id="work">
+        <div class="container-title">
+            <h2>Portfolio</h2>
+            <img src="./assets/Deco heading.png" alt="decoration heading">
+        </div>
+        <div class="grid-container">
+            <div class="work-item">
+                <h4 class="work-name">Work Experience</h4>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Work experience.png" alt="Work ex" class="animation">
+                </a>
+            </div>
+            <div class="work-item">
+                <h4 class="work-name">Work Experience</h4>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/Work Experience 2.png" alt="Work ex" class="animation">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="container flex" id="contact">
+        <div class="container-title">
+            <h2>Contact</h2>
+            <img src="./assets/Deco heading.png" alt="decoration heading">
+        </div>
+        <div class="contact-section flex">
+            <div class="contact-left flex">
+                <h2 class="text-effect">Here's Where to Contact Me</h2>
+                <p>Contact me about Myself or Projects</p>
+                <div class="contact-details flex">
+                    <div class="contact-item flex"><i class="fa-solid fa-envelope"></i><p>emileedws@gmail.com</p></div>
+                    <div class="contact-item flex"><i class="fa-solid fa-phone"></i><p>+447538559169</p></div>
+                    <div class="contact-item flex"><i class="fa-solid fa-location-dot"></i><p>UK</p></div>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/emileedws@gmail.com" method="POST" class="contact-right flex">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                <label for="message">Enter a Message</label>
+                <textarea name="message" id="message" placeholder="Leave a Message"></textarea>
+                <button type="submit" class="btn animation">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="flex">
+        <div class="footer-top flex">
+            <div class="footer-top-left">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="footer-top-right">
+                <p>I am a coder that loves to solve complex challenges</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>@emileedws</p>
+        </div>
+    </footer>
+</body>
+</html>
